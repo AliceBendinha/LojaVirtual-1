@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header a, header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header a:hover, header nav ul li a:hover {
+    color: #e97474;
+}
+
+header .carrinho a {
+    font-size: 16px;
+}
+
+/* Principal */
+main {
+    padding: 20px;
+}
+
+h1, p, .mensagem {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 50%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.produto p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.produto span {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.produto button {
+    background-color: #e97474;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #a53b3b;
+}
+
+/* Página do Produto */
+.product-page {
+    padding: 50px;
+    text-align: center;
+}
+
+.carrinho {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+#itens-carrinho, #lista-carrinho {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#itens-carrinho li, #lista-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#total {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#finalizar {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#finalizar:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer button {
+    background-color: slategrey;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Estilos adicionais para a página de administração */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0000009a;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header a, header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header a:hover, header nav ul li a:hover {
+    color: #e97474;
+}
+
+header .carrinho a {
+    font-size: 16px;
+}
+
+/* Principal */
+main {
+    padding: 20px;
+}
+
+h1, p, .mensagem {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 50%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.produto p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.produto span {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.produto button {
+    background-color: #e97474;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #a53b3b;
+}
+
+/* Página do Produto */
+.product-page {
+    padding: 50px;
+    text-align: center;
+}
+
+.carrinho {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+#itens-carrinho, #lista-carrinho {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#itens-carrinho li, #lista-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#total {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#finalizar {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#finalizar:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer button {
+    background-color: slategrey;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Ajustes para a Página de Carrinho */
+.item-carrinho img {
+    width: 100px;
+    height: auto;
+}
+
+
+/* Estilos para a caixa de produtos pagos */
+.caixa-pagos {
+    border: 1px solid #ddd; /* Borda ao redor da caixa */
+    padding: 10px;
+    border-radius: 5px;
+    Largura máxima da caixa
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Estilos para os itens pagos */
+.item-pago {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px; /* Largura de cada item dentro da caixa */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 5px; /* Espaçamento entre os itens */
+}
+
+/* Estilos para o botão limpar fora da caixa de produtos pagos */
+#container-pagar-limpar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#botao-limpar {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração de Produtos</title>
+    <link rel="stylesheet" href="Styles/admin.css">
+    <script src="Script/admin.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="Inicio.html"><img src="IMG/BendCost-logo1.png" alt="logotipo"></a>
+        </div>
+    </header>
+ <!-- Container Flexível para Alinhar as Seções -->
+ <div class="container-flex">
+    <!-- Seção Administração -->
+    <section id="admin">
+        <h1>Administração de Produtos</h1>
+        <form id="admin-form">
+            <label for="produto-id">ID do Produto:</label>
+            <input type="text" id="produto-id" required>
+
+            <label for="produto-nome">Nome do Produto:</label>
+            <input type="text" id="produto-nome" required>
+
+            <label for="produto-descricao">Descrição do Produto:</label>
+            <input type="text" id="produto-descricao" required>
+
+            <label for="produto-preco">Preço do Produto:</label>
+            <input type="text" id="produto-preco" required>
+
+            <label for="produto-imagem">Imagem do Produto:</label>
+            <input type="file" id="produto-imagem" accept="image/*">
+
+            <label for="pagina-destino">Salvar em:</label>
+            <select id="pagina-destino">
+             
+                <option value="produtos">Página de Produtos</option>
+            </select>
+
+            <button type="submit">Salvar Produto</button>
+            <button type="button" id="limpar-form">Limpar</button>
+        </form>
+
+        <div id="produtos-lista" class="produtos"></div>
+    </section>
+<!-- Seção Administração de Conteúdo da Página Inicial -->
+<section id="inicio">
+    <h1>Administração do Conteúdo da Página Inicial</h1>
+    <form id="inicio-form">
+        <label for="inicio-titulo">Título:</label>
+        <input type="text" id="inicio-titulo" required>
+
+        <label for="inicio-subtitulo">Subtítulo:</label>
+        <input type="text" id="inicio-subtitulo" required>
+
+        <label for="inicio-descricao">Descrição:</label>
+        <textarea id="inicio-descricao" required></textarea>
+
+        <label for="inicio-imagem">Imagem:</label>
+        <input type="file" id="inicio-imagem" accept="image/*">
+
+        <button type="submit">Salvar Conteúdo</button>
+        <button type="button" id="limpar-form-inicio">Limpar</button>
+        <label for="pagina-destino">Salvar em:</label>
+        <select id="pagina-destino">
+            <option value="inicio">Página Inicial</option>
+        </select>
+
+    </form>
+
+    <div id="inicio-lista" class="produtos"></div>
+</section>
+
+
+  <!-- Rodapé -->
+  <footer>
+    <p>ACPV - 2025 | © todos os direitos reservados</p>
+    <button type="button">Email: bendcost08@gmail.com</button>
+</footer>
+</body>
+</html>
+<!-- Scripts -->
+
+</body>
+</html>
