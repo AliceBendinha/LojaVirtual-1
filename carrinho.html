@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="Styles/loja.css">
+    <script src="Script/carrinho.js" defer></script>
 </head>
 <body>
 
@@ -16,7 +17,6 @@
         <a href="produtos.html">Voltar</a>
     </header>
 
-
     <main>
         <div id="carrinho-vazio" class="mensagem">
             <p>Seu carrinho está vazio.</p>
@@ -27,17 +27,25 @@
         </ul>
 
         <div id="total">
-            <p>Total: R$ <span id="total-preco">0.00</span></p>
+            <p>Total: OA <span id="total-preco">0.00</span></p>
+        </div>
+
+        <div id="pagar">
+            <button id="botao-pagar">Pagar</button>
+        </div>
+
+        <div id="produtos-pagos">
+            <h2>Produtos Pagos</h2>
+            <ul id="lista-pagos">
+                <!-- Produtos pagos serão listados aqui -->
+            </ul>
         </div>
     </main>
-
-    <script src="script.js"></script>
 
     <!-- Rodapé -->
     <footer>         
         <p>ACPV - 2025 | © todos os direitos reservados</p>
-    <br>  <button type="button">Email: bendcost08@gmail.com</button>         
+        <button type="button">Email: bendcost08@gmail.com</button>         
     </footer>
 </body>
 </html>
-
